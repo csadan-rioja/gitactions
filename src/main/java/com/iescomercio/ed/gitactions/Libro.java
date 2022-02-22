@@ -8,32 +8,25 @@ public class Libro {
 	private String titulo;
 	
 	public Libro(String isbn, String titulo) {
-		this.isbn = isbn;
-		this.titulo = titulo;
+
 	}
 	
 	public String getIsbn() {
-		return isbn;
 	}
+	
+	//solo se modificará si el isbn tiene 9 elementos, en caso contrario lanzará una excepción
 	public void setIsbn(String isbn) throws Exception {
-		if(isbn.length()==9) {
-			this.isbn = isbn;
-		}else {
-			throw new Exception("isbn no es correcto");
-		}
+
 	}
 	public String getTitulo() {
-		return titulo;
 	}
 	
 	
 	public void setTitulo(String titulo) {
-		this.titulo = titulo;
 	}
 	
 	//ISBN que empiezan en 1 son de aventuras
 	public boolean isAventuras() {
-		return this.getIsbn().startsWith("1");
 	}
 
 	@Override

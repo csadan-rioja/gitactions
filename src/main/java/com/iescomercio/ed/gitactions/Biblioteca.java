@@ -7,28 +7,20 @@ public class Biblioteca {
 	private ArrayList<Libro> libros;
 	
 	public Biblioteca() {
-		libros = new ArrayList<>();
 	}
 
 	public int numLibros() {
-		return libros.size();
 	}
 	
+	//devuelve verdadero si se puede añadir y falso en caso contrario. Devolverá falso si no es de aventuras. 
 	public boolean aniadirLibro(Libro l) {
-		if(l.isAventuras()) {
-			libros.add(l);
-			return true;
-		}else {
-			return false;
-		}
+
 	}
 	
 	public ArrayList<Libro> getLibros() {
-		return libros;
 	}
 
 	public void setLibros(ArrayList<Libro> libros) {
-		this.libros = libros;
 	}
 
 }
